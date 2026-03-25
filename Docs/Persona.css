@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+}
+#crearPersona{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#tabla{
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+}
+#botones{
+    display: grid;
+    grid-template-columns: repeat(1);
+    gap: 30px;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 1100px;
+}
