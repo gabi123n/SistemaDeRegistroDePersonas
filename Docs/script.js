@@ -43,13 +43,13 @@ document.addEventListener("click", (e) => {
     if (e.target.classList.contains("btnEliminar")) {
         const index = e.target.getAttribute("data-index");
         
-        // Eliminar del array
+       
         personas.splice(index, 1);
 
-        // Guardar en localStorage
+       
         localStorage.setItem("personas", JSON.stringify(personas));
 
-        // Recargar la página para actualizar la tabla
+      
         window.location.reload();
     }
 });
@@ -58,10 +58,10 @@ document.addEventListener("click", (e) => {
     if (e.target.classList.contains("btnModificar")) {
         const index = e.target.dataset.index;
 
-        // Guardar el índice de la persona que se va a modificar
+ 
         localStorage.setItem("personaEditar", index);
 
-        // Ir a la página de edición
+ 
         window.location.href = "editar.html";
     }
 });
